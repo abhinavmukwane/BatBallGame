@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bat and Ball Game</title>
+	<link rel="stylesheet" href="game.css">
+  </head>
+  <body>
+    <h1>Bat and Ball Game</h1>
+    <button class="button-89" id="start-button" onclick="showDiv()">Start Game</button>
+    <div id="myDiv" style="display:none;" >
+      <p>Select game type:</p>
+      <input type="radio" name="game-type" value="single" checked /><a>Single ball</a>
+      <input type="radio" name="game-type" value="double" /><a>Double ball</a>
+    </div>
+	<br><br>
+  <div id="canvsDiv">
+    <canvas id="myCanvas" width="640" height="480"></canvas>
+  </div>
+    <script src="game.js"></script>
+  </body>
+</html>

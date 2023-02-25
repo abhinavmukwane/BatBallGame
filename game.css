@@ -1,0 +1,84 @@
+/* Apply a red border with a thickness of 5px to the canvas element */
+canvas {
+  border: 5px solid rgb(204, 9, 41);
+}
+
+/* Set the background image of the body to the specified image, 
+  prevent it from repeating, make it fixed, and cover the entire body */
+body{
+background-image: url("bg_img.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;  
+background-size: cover;
+overflow-x: hidden;
+}
+
+
+/* Style for the custom button */
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #ffffff;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);  /* Set text color */
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #ffffff00;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position:relative; 
+  left: 80px; top:2px;
+}
+
+/* Style when the button is hovered or focused */
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+/* Style when the button is clicked */
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+/* Style for p and a elements */
+p, a{
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative; 
+  left:80px; top:2px;
+}
+
+
+/* Set the background color of the canvas to white */
+#myCanvas{
+  background-color: gainsboro;
+}
+
+#canvsDiv{
+  position: relative; 
+  left:80px; top:2px;
+}
+
+#myDiv{
+  position: relative; 
+  left:80px; top:2px;
+}
